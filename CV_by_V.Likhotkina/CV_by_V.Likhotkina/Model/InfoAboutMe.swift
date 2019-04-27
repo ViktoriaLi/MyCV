@@ -35,6 +35,7 @@ class InfoAboutMe {
     let firstName: String = "Viktoria"
     let lastName: String = "Likhotkina"
     let image: String = ""
+    let greeting: String = "Hello, I'm Viktoria..."
     
     let contacts = Contacts()
     let skills = ["Swift" : "", "C": "", "Xcode": "", "UIKit": "", "Foundation": "", "Autolayout": "", "Git": "", "JIRA": "", "Redmine": "", "Agile": "", "API": "", "GCD": "", "CoreData": ""]
