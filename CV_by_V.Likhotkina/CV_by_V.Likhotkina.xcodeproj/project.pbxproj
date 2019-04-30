@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9F1A4462278718E00FDE21E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F1A4452278718E00FDE21E /* Info.plist */; };
+		A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */; };
 		C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746A022749DBB00DBA111 /* AppDelegate.swift */; };
 		C10746A622749DBB00DBA111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10746A422749DBB00DBA111 /* Main.storyboard */; };
 		C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10746A722749DBE00DBA111 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A9F1A4452278718E00FDE21E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
 		C107469D22749DBB00DBA111 /* CV_by_V.Likhotkina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_by_V.Likhotkina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10746A022749DBB00DBA111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10746A522749DBB00DBA111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				C10746A422749DBB00DBA111 /* Main.storyboard */,
 				C10746A922749DBE00DBA111 /* LaunchScreen.storyboard */,
 				C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */,
+				A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					C107469C22749DBB00DBA111 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -195,6 +199,7 @@
 				C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */,
 				C10746B52274AB4000DBA111 /* AboutMeViewController.swift in Sources */,
 				C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */,
+				A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Viktoria.CV-by-V-Likhotkina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;

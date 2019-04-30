@@ -29,6 +29,21 @@ struct Works {
     }
 }
 
+enum HeaderStatus {
+    case open, close, empty
+}
+
+struct Skill {
+    var currentStatus: HeaderStatus = .close
+    var skillName: String!
+    var skillDescription: String!
+    
+    init(skillName: String, skillDescription: String) {
+        self.skillName = skillName
+        self.skillDescription = skillDescription
+    }
+}
+
 class InfoAboutMe {
     static let shared = InfoAboutMe()
     
@@ -38,7 +53,7 @@ class InfoAboutMe {
     let greeting: String = "Hello, I'm Viktoria..."
     
     let contacts = Contacts()
-    let skills = ["Swift" : "", "C": "", "Xcode": "", "UIKit": "", "Foundation": "", "Autolayout": "", "Git": "", "JIRA": "", "Redmine": "", "Agile": "", "API": "", "GCD": "", "CoreData": ""]
+    var skills = [Skill(skillName: "Swift", skillDescription: "Self learning"), Skill(skillName: "C", skillDescription: ""), Skill(skillName: "Xcode", skillDescription: ""), Skill(skillName: "UIKit", skillDescription: ""), Skill(skillName: "Foundation", skillDescription: ""), Skill(skillName: "Autolayout", skillDescription: ""), Skill(skillName: "Git", skillDescription: ""), Skill(skillName: "JIRA", skillDescription: ""), Skill(skillName: "Redmine", skillDescription: ""), Skill(skillName: "Agile", skillDescription: ""), Skill(skillName: "API", skillDescription: ""), Skill(skillName: "GCD", skillDescription: ""), Skill(skillName: "CoreData", skillDescription: "")]
     
     let languages = ["English", "Ukrainian", "Russian"]
     

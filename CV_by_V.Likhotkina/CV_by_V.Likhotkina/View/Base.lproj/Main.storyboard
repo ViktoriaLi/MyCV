@@ -262,8 +262,44 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-ZX-ukl">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="gV6-4j-u2d"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="skillCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="skillCell" id="pId-E4-Lpk" customClass="SkillsTableViewCell" customModule="CV_by_V_Likhotkina" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pId-E4-Lpk" id="Fkf-5c-5K9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz2-a2-IYI">
+                                                            <rect key="frame" x="10" y="10" width="42" height="23.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Xz2-a2-IYI" secondAttribute="bottom" constant="10" id="2Sn-iF-usj"/>
+                                                        <constraint firstItem="Xz2-a2-IYI" firstAttribute="top" secondItem="Fkf-5c-5K9" secondAttribute="top" constant="10" id="d2y-j2-u5g"/>
+                                                        <constraint firstItem="Xz2-a2-IYI" firstAttribute="leading" secondItem="Fkf-5c-5K9" secondAttribute="leading" constant="10" id="ob0-MD-IsN"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <accessibility key="accessibilityConfiguration" identifier="skillCell">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <connections>
+                                                    <outlet property="skillLabel" destination="Xz2-a2-IYI" id="84E-fO-xhM"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-Pc-y03">
-                                        <rect key="frame" x="56" y="99" width="129" height="21"/>
+                                        <rect key="frame" x="56" y="424" width="129" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -271,11 +307,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ytV-Hv-pjt" firstAttribute="top" secondItem="I3Y-KO-qmC" secondAttribute="top" constant="53" id="9Vy-f3-8eP"/>
-                                    <constraint firstAttribute="bottom" secondItem="S6H-Pc-y03" secondAttribute="bottom" constant="649" id="RIA-is-ngs"/>
+                                    <constraint firstItem="S6H-Pc-y03" firstAttribute="top" secondItem="eHP-ZX-ukl" secondAttribute="bottom" constant="30" id="A60-Dm-4Js"/>
+                                    <constraint firstItem="eHP-ZX-ukl" firstAttribute="width" secondItem="I3Y-KO-qmC" secondAttribute="width" id="FLX-Vq-5pX"/>
+                                    <constraint firstItem="eHP-ZX-ukl" firstAttribute="top" secondItem="ytV-Hv-pjt" secondAttribute="bottom" constant="20" id="LDI-mY-MFn"/>
+                                    <constraint firstAttribute="bottom" secondItem="S6H-Pc-y03" secondAttribute="bottom" constant="10" id="RIA-is-ngs"/>
                                     <constraint firstAttribute="trailing" secondItem="S6H-Pc-y03" secondAttribute="trailing" constant="229" id="Vpf-DP-O4Z"/>
                                     <constraint firstItem="S6H-Pc-y03" firstAttribute="leading" secondItem="I3Y-KO-qmC" secondAttribute="leading" constant="56" id="a8k-Rq-NfX"/>
-                                    <constraint firstItem="S6H-Pc-y03" firstAttribute="top" secondItem="ytV-Hv-pjt" secondAttribute="bottom" constant="25" id="dzP-RL-t1l"/>
                                     <constraint firstItem="ytV-Hv-pjt" firstAttribute="leading" secondItem="I3Y-KO-qmC" secondAttribute="leading" constant="20" id="e1d-M6-yxd"/>
+                                    <constraint firstItem="eHP-ZX-ukl" firstAttribute="leading" secondItem="I3Y-KO-qmC" secondAttribute="leading" id="yPK-kU-jfw"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -289,10 +328,13 @@
                         <viewLayoutGuide key="safeArea" id="PE0-Q8-5tH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Professional information" id="Ovh-HT-c2n"/>
+                    <connections>
+                        <outlet property="skillsTableView" destination="eHP-ZX-ukl" id="qg4-hF-qHG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4E-GK-Qxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.985507246377" y="93.75"/>
+            <point key="canvasLocation" x="1128.8" y="93.103448275862078"/>
         </scene>
         <!--Additional information-->
         <scene sceneID="lNp-PG-t4C">

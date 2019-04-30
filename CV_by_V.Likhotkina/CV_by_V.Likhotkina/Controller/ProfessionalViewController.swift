@@ -9,22 +9,59 @@
 import UIKit
 
 class ProfessionalViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var skillsTableView: UITableView!
+    
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ProfessionalViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        skillsTableView.delegate = self
+        skillsTableView.dataSource = self
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        /*if InfoAboutMe.shared.skills[section].currentStatus == .open {
+            return 1
+        }
+        return 2*/
+        return InfoAboutMe.shared.skills[section].currentStatus == .open ? 2 : 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return InfoAboutMe.shared.skills.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            /*if (userData?.validatedProjects?[indexPath.section].childProjects.count)! > 0 && userData?.validatedProjects?[indexPath.section].headerStatus == .open {
+                userData?.validatedProjects?[indexPath.section].headerStatus = .close
+            }
+            else if (userData?.validatedProjects?[indexPath.section].childProjects.count)! > 0 {
+                userData?.validatedProjects?[indexPath.section].headerStatus = .open
+            }*/
+            if InfoAboutMe.shared.skills[indexPath.section].currentStatus == .open {
+                InfoAboutMe.shared.skills[indexPath.section].currentStatus = .close
+            } else if InfoAboutMe.shared.skills[indexPath.section].currentStatus == .close {
+                InfoAboutMe.shared.skills[indexPath.section].currentStatus = .open
+            }
+            tableView.reloadSections([indexPath.section], with: .automatic)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = skillsTableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as? SkillsTableViewCell
+        if indexPath.row == 0 {
+            cell?.skillLabel.text = InfoAboutMe.shared.skills[indexPath.section].skillName
+        } else {
+            cell?.skillLabel.text = InfoAboutMe.shared.skills[indexPath.section].skillDescription
+        }
+        
+        return cell!
+    }
 
+    
 }
