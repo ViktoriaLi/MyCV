@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 49;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9F1A4462278718E00FDE21E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F1A4452278718E00FDE21E /* Info.plist */; };
 		C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746A022749DBB00DBA111 /* AppDelegate.swift */; };
 		C10746A622749DBB00DBA111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10746A422749DBB00DBA111 /* Main.storyboard */; };
 		C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10746A722749DBE00DBA111 /* Assets.xcassets */; };
@@ -21,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9F1A4452278718E00FDE21E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C107469D22749DBB00DBA111 /* CV_by_V.Likhotkina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_by_V.Likhotkina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10746A022749DBB00DBA111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10746A522749DBB00DBA111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C10746A722749DBE00DBA111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10746AA22749DBE00DBA111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C10746AC22749DBE00DBA111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
 		C10746B42274AB4000DBA111 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeViewController.swift; path = ../AboutMeViewController.swift; sourceTree = "<group>"; };
 		C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalViewController.swift; sourceTree = "<group>"; };
 		C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,7 @@
 		C107469F22749DBB00DBA111 /* CV_by_V.Likhotkina */ = {
 			isa = PBXGroup;
 			children = (
-				C10746AC22749DBE00DBA111 /* Info.plist */,
+				A9F1A4452278718E00FDE21E /* Info.plist */,
 				C10746B92274ABB200DBA111 /* View */,
 				C10746B72274AB7500DBA111 /* Model */,
 				C10746B62274AB4B00DBA111 /* Controller */,
@@ -150,7 +151,7 @@
 				};
 			};
 			buildConfigurationList = C107469822749DBB00DBA111 /* Build configuration list for PBXProject "CV_by_V.Likhotkina" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 9.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -172,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F1A4462278718E00FDE21E /* Info.plist in Resources */,
 				C10746AB22749DBE00DBA111 /* LaunchScreen.storyboard in Resources */,
 				C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */,
 				C10746A622749DBB00DBA111 /* Main.storyboard in Resources */,
@@ -340,13 +342,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Viktoria.CV-by-V-Likhotkina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -357,13 +357,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Viktoria.CV-by-V-Likhotkina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

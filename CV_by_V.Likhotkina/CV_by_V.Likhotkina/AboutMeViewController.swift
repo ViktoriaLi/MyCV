@@ -19,16 +19,32 @@ class AboutMeViewController: UIViewController {
     @IBOutlet weak var phoneImageView: UIImageView!
     @IBOutlet weak var emailImageView: UIImageView!
     
-    @IBAction func linkedinButton(_ sender: UIButton) {
+    /*@IBAction func linkedinButton(_ sender: UIButton) {
+        let url = URL(string: InfoAboutMe.shared.contacts.linkedin)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url!)
+        }
         //let viewController = self.storyboard?.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
         //self.navigationController?.setViewControllers([viewController], animated: true)
+        
+    }*/
+    
+    @IBAction func socialNetworkOpenButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
-        //controller.userData = self.studentInfo
+        let networkToLoad: String?
+        switch sender.tag {
+        case 0:
+            networkToLoad = InfoAboutMe.shared.contacts.github
+        case 1:
+            networkToLoad = InfoAboutMe.shared.contacts.linkedin
+        default:
+            networkToLoad = nil
+        }
+        controller.networkToLoad = networkToLoad
         self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
-    @IBAction func githubButton(_ sender: UIButton) {
     }
     
 }

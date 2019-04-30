@@ -12,6 +12,7 @@ import WebKit
 class SocialNetworkViewController: UIViewController, WKUIDelegate {
 
     var webView: WKWebView!
+    var networkToLoad: String?
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -22,14 +23,22 @@ class SocialNetworkViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string:"https://www.apple.com")
-        let myRequest = URLRequest(url: myURL!)
-        webView.load(myRequest)
-    }}
-
+        if let network = networkToLoad {
+            let url = URL(string: network)
+            let request = URLRequest(url: url!)
+            webView.load(request)
+        }
+    }
     
-   // func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        //title = webView.title
-    //}
+    /*func webViewDidFinishLoad(_ webView: UIWebView) {
+        self.navigationController?.title
+         = webView.stringByEvaluatingJavaScript(from: "document.title")
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.navigationController?.title
+            = webView.title
+    }*/
+    
+}
 
-//}
