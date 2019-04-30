@@ -17,6 +17,7 @@
 		C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */; };
 		C10746C22274BAE300DBA111 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C12274BAE300DBA111 /* Education.swift */; };
 		C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */; };
+		C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutMe.swift; sourceTree = "<group>"; };
 		C10746C12274BAE300DBA111 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				C10746B42274AB4000DBA111 /* AboutMeViewController.swift */,
 				C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */,
 				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
+				C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */,
 				C10746BC2274AC3D00DBA111 /* ProfessionalViewController.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,

@@ -13,9 +13,24 @@ class AboutMeViewController: UIViewController {
     @IBOutlet weak var myPhotoImageView: UIImageView!
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var summaryCollectionView: UICollectionView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var phoneImageView: UIImageView!
+    @IBOutlet weak var emailImageView: UIImageView!
     
-
-
+    @IBAction func linkedinButton(_ sender: UIButton) {
+        //let viewController = self.storyboard?.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
+        //self.navigationController?.setViewControllers([viewController], animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
+        //controller.userData = self.studentInfo
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func githubButton(_ sender: UIButton) {
+    }
+    
 }
 
 extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
@@ -24,6 +39,10 @@ extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewData
         summaryCollectionView.delegate = self
         summaryCollectionView.dataSource = self
         greetingLabel.text = InfoAboutMe.shared.greeting
+        nameLabel.text = InfoAboutMe.shared.firstName + " " + InfoAboutMe.shared.lastName
+        phoneNumberLabel.text = InfoAboutMe.shared.contacts.phone
+        emailLabel.text = InfoAboutMe.shared.contacts.email
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
