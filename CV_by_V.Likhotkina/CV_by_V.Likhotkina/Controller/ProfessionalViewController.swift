@@ -10,8 +10,6 @@ import UIKit
 
 class ProfessionalViewController: UIViewController {
     @IBOutlet weak var skillsTableView: UITableView!
-    
-    
 
 }
 

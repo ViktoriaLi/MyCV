@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A98400002278AF4100A7F50B /* Works.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984FFFF2278AF4100A7F50B /* Works.swift */; };
+		A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400012278AF5F00A7F50B /* HeaderStatus.swift */; };
+		A98400042278AF7C00A7F50B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400032278AF7C00A7F50B /* Skill.swift */; };
+		A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984FFFD2278AF2600A7F50B /* Contacts.swift */; };
 		A9F1A4462278718E00FDE21E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F1A4452278718E00FDE21E /* Info.plist */; };
 		A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */; };
 		C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746A022749DBB00DBA111 /* AppDelegate.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A98400012278AF5F00A7F50B /* HeaderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStatus.swift; sourceTree = "<group>"; };
+		A98400032278AF7C00A7F50B /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		A984FFFD2278AF2600A7F50B /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		A984FFFF2278AF4100A7F50B /* Works.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Works.swift; sourceTree = "<group>"; };
 		A9F1A4452278718E00FDE21E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
 		C107469D22749DBB00DBA111 /* CV_by_V.Likhotkina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_by_V.Likhotkina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +102,10 @@
 			children = (
 				C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */,
 				C10746C12274BAE300DBA111 /* Education.swift */,
+				A984FFFD2278AF2600A7F50B /* Contacts.swift */,
+				A984FFFF2278AF4100A7F50B /* Works.swift */,
+				A98400012278AF5F00A7F50B /* HeaderStatus.swift */,
+				A98400032278AF7C00A7F50B /* Skill.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,10 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98400002278AF4100A7F50B /* Works.swift in Sources */,
+				A98400042278AF7C00A7F50B /* Skill.swift in Sources */,
 				C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */,
+				A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */,
 				C10746BC2274AC3D00DBA111 /* ProfessionalViewController.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,
+				A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */,
 				C10746C22274BAE300DBA111 /* Education.swift in Sources */,
 				C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */,
 				C10746B52274AB4000DBA111 /* AboutMeViewController.swift in Sources */,

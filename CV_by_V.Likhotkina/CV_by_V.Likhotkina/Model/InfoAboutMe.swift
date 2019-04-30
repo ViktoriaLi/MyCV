@@ -8,42 +8,6 @@
 
 import Foundation
 
-struct Contacts {
-    let phone: String = "+38 063 879 38 37"
-    let email: String = "viktoria.likhotkina@gmail.com"
-    let github: String = "https://github.com/ViktoriaLi"
-    let linkedin: String = "http://www.linkedin.com/in/viktoriali"
-}
-
-struct Works {
-    let companyName: String
-    let position: String
-    let jobDescription: String
-    let duration: String
-    
-    init(companyName: String, position: String, jobDescription: String, duration: String) {
-        self.companyName = companyName
-        self.position = position
-        self.jobDescription = jobDescription
-        self.duration = duration
-    }
-}
-
-enum HeaderStatus {
-    case open, close, empty
-}
-
-struct Skill {
-    var currentStatus: HeaderStatus = .close
-    var skillName: String!
-    var skillDescription: String!
-    
-    init(skillName: String, skillDescription: String) {
-        self.skillName = skillName
-        self.skillDescription = skillDescription
-    }
-}
-
 class InfoAboutMe {
     static let shared = InfoAboutMe()
     
@@ -70,6 +34,4 @@ class InfoAboutMe {
          Works(companyName: "ExpoPlatform", position: "QA Engineer", jobDescription: "Grocery IT company which developed event management system consisting of CMS, websites and mobile applications. I worked with team of developers and testers,  created test cases for all products and performed all stages of testing manually.", duration: "Jan 2017 - Sep 2017"),
          Works(companyName: "Security Services Group", position: "QA Engineer", jobDescription: "Startup company which project is  secure messenger (mobile apps and web version). Being a single tester I have organized testing process  and performed all cycle of manual testing.", duration: "Dec 2015 - Jan 2017")
     ]
-    //let phone: String = "+38 063 879 38 37"
-    //let phone: String = "Likhotkina"
 }
