@@ -17,7 +17,7 @@
 		C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10746A722749DBE00DBA111 /* Assets.xcassets */; };
 		C10746AB22749DBE00DBA111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10746A922749DBE00DBA111 /* LaunchScreen.storyboard */; };
 		C10746B52274AB4000DBA111 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746B42274AB4000DBA111 /* AboutMeViewController.swift */; };
-		C10746BC2274AC3D00DBA111 /* ProfessionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */; };
+		C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */; };
 		C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */; };
 		C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */; };
 		C10746C22274BAE300DBA111 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C12274BAE300DBA111 /* Education.swift */; };
@@ -44,7 +44,7 @@
 		C10746A722749DBE00DBA111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10746AA22749DBE00DBA111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C10746B42274AB4000DBA111 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeViewController.swift; path = ../AboutMeViewController.swift; sourceTree = "<group>"; };
-		C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalViewController.swift; sourceTree = "<group>"; };
+		C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoViewController.swift; sourceTree = "<group>"; };
 		C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutMe.swift; sourceTree = "<group>"; };
 		C10746C12274BAE300DBA111 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C10746B42274AB4000DBA111 /* AboutMeViewController.swift */,
-				C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */,
+				C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */,
 				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */,
 				C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */,
@@ -227,7 +227,7 @@
 				A98400042278AF7C00A7F50B /* Skill.swift in Sources */,
 				C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */,
 				A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */,
-				C10746BC2274AC3D00DBA111 /* ProfessionalViewController.swift in Sources */,
+				C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */,
 				C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,
