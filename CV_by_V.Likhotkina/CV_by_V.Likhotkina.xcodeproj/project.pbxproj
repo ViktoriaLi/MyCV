@@ -32,6 +32,7 @@
 		C1E420DE2279B73700FD0BC3 /* LanguagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420DD2279B73700FD0BC3 /* LanguagesTableViewCell.swift */; };
 		C1E420E02279B88600FD0BC3 /* EducationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */; };
 		C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E12279C3CE00FD0BC3 /* Languages.swift */; };
+		C1E420E4227A0C9D00FD0BC3 /* ShowSertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		C1E420DD2279B73700FD0BC3 /* LanguagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTableViewCell.swift; sourceTree = "<group>"; };
 		C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1E420E12279C3CE00FD0BC3 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSertificateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				A9F1A4452278718E00FDE21E /* Info.plist */,
-				C10746B92274ABB200DBA111 /* View */,
 				C10746B72274AB7500DBA111 /* Model */,
 				C10746B62274AB4B00DBA111 /* Controller */,
+				C10746B92274ABB200DBA111 /* View */,
 				C10746BA2274ABE500DBA111 /* Other */,
 			);
 			path = CV_by_V.Likhotkina;
@@ -112,6 +114,7 @@
 				C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */,
 				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */,
+				C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				A98400042278AF7C00A7F50B /* Skill.swift in Sources */,
 				C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */,
 				A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */,
+				C1E420E4227A0C9D00FD0BC3 /* ShowSertificateViewController.swift in Sources */,
 				C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */,
 				C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,

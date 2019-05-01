@@ -65,4 +65,5 @@ extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISe
         }
         skillsTableView.reloadData()
     }
+    
 }

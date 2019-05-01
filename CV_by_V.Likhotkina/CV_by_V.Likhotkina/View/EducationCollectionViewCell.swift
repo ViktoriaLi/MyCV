@@ -13,5 +13,8 @@ class EducationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var institutionLabel: UILabel!
     @IBOutlet weak var educationDurationLabel: UILabel!
     @IBOutlet weak var degreeLabel: UILabel!
-    @IBOutlet weak var educationProgressLabel: UIProgressView!
+    
+    @IBAction func showProgress(_ sender: UIButton) {
+    }
+    
 }
