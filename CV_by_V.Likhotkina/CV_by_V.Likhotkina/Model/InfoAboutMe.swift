@@ -13,7 +13,7 @@ class InfoAboutMe {
     
     let firstName: String = "Viktoria"
     let lastName: String = "Likhotkina"
-    let image: String = ""
+    let image: String = "https://avatars0.githubusercontent.com/u/23379428?s=460&v=4"
     let greeting: String = "Hello, I'm Viktoria..."
     
     let contacts = Contacts()

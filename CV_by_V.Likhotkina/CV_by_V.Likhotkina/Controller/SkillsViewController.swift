@@ -21,6 +21,7 @@ class SkillsViewController: UIViewController {
         skillsSearchBar.delegate = self
         filteredSkills = InfoAboutMe.shared.skills
     }
+    
 }
 
 extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
@@ -48,8 +49,12 @@ extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISe
         let cell = skillsTableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as? SkillsTableViewCell
         if indexPath.row == 0 {
             cell?.skillLabel.text = filteredSkills[indexPath.section].skillName
+            cell?.skillLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
+            cell?.skillNameLeadingConstraint.constant = 10
         } else {
             cell?.skillLabel.text = filteredSkills[indexPath.section].skillDescription
+            cell?.skillLabel.font = UIFont.systemFont(ofSize: 15.0)
+            cell?.skillNameLeadingConstraint.constant = 20
         }
         return cell!
     }

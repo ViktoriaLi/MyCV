@@ -28,6 +28,13 @@ class AboutMeViewController: UIViewController {
         phoneNumberLabel.text = InfoAboutMe.shared.contacts.phone
         emailLabel.text = InfoAboutMe.shared.contacts.email
         
+        if let url = URL(string: InfoAboutMe.shared.image) {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    self.myPhotoImageView.image = UIImage(data: data)
+                }
+            }
+        }
     }
     
     @IBAction func socialNetworkOpenButton(_ sender: UIButton) {
@@ -58,25 +65,18 @@ extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "summaryCell", for: indexPath) as! SummaryCollectionViewCell
         
         cell.summaryDescription.text = InfoAboutMe.shared.summary[indexPath.row]
-        cell.layer.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        cell.layer.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         return cell
     }
 }
 
 extension AboutMeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 160.0)
+        return CGSize(width: view.frame.width, height: 70.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10.0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20.0
-    }
 }

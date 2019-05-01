@@ -38,6 +38,11 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)

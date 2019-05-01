@@ -12,4 +12,5 @@ class SkillsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var skillLabel: UILabel!
     
+    @IBOutlet weak var skillNameLeadingConstraint: NSLayoutConstraint!
 }
