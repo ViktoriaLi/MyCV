@@ -14,10 +14,6 @@ class SkillsViewController: UIViewController {
     
     var filteredSkills = [Skill]()
 
-}
-
-extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         skillsTableView.delegate = self
@@ -25,6 +21,9 @@ extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISe
         skillsSearchBar.delegate = self
         filteredSkills = InfoAboutMe.shared.skills
     }
+}
+
+extension SkillsViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredSkills[section].currentStatus == .open ? 2 : 1

@@ -12,10 +12,6 @@ class ExperienceViewController: UIViewController {
     
     @IBOutlet weak var jobTableView: UITableView!
     
-}
-
-extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         jobTableView.delegate = self
@@ -25,6 +21,9 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
         let nibDescription = UINib.init(nibName: "JobDescriptionTableViewCell", bundle: nil)
         jobTableView.register(nibDescription, forCellReuseIdentifier: "jobDescriptionCell")
     }
+}
+
+extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return InfoAboutMe.shared.works[section].currentStatus == .open ? 2 : 1

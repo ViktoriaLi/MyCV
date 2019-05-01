@@ -19,6 +19,17 @@ class AboutMeViewController: UIViewController {
     @IBOutlet weak var phoneImageView: UIImageView!
     @IBOutlet weak var emailImageView: UIImageView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        summaryCollectionView.delegate = self
+        summaryCollectionView.dataSource = self
+        greetingLabel.text = InfoAboutMe.shared.greeting
+        nameLabel.text = InfoAboutMe.shared.firstName + " " + InfoAboutMe.shared.lastName
+        phoneNumberLabel.text = InfoAboutMe.shared.contacts.phone
+        emailLabel.text = InfoAboutMe.shared.contacts.email
+        
+    }
+    
     @IBAction func socialNetworkOpenButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
@@ -38,16 +49,6 @@ class AboutMeViewController: UIViewController {
 }
 
 extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        summaryCollectionView.delegate = self
-        summaryCollectionView.dataSource = self
-        greetingLabel.text = InfoAboutMe.shared.greeting
-        nameLabel.text = InfoAboutMe.shared.firstName + " " + InfoAboutMe.shared.lastName
-        phoneNumberLabel.text = InfoAboutMe.shared.contacts.phone
-        emailLabel.text = InfoAboutMe.shared.contacts.email
-        
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return InfoAboutMe.shared.summary.count

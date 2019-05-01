@@ -29,6 +29,9 @@
 		C1E420D822798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */; };
 		C1E420DA22798ADD00FD0BC3 /* JobTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */; };
 		C1E420DC22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */; };
+		C1E420DE2279B73700FD0BC3 /* LanguagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420DD2279B73700FD0BC3 /* LanguagesTableViewCell.swift */; };
+		C1E420E02279B88600FD0BC3 /* EducationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */; };
+		C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E12279C3CE00FD0BC3 /* Languages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTitleTableViewCell.xib; sourceTree = "<group>"; };
 		C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		C1E420DD2279B73700FD0BC3 /* LanguagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTableViewCell.swift; sourceTree = "<group>"; };
+		C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1E420E12279C3CE00FD0BC3 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				C10746B42274AB4000DBA111 /* AboutMeViewController.swift */,
-				C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */,
-				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */,
+				C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */,
 				C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */,
+				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */,
 			);
 			path = Controller;
@@ -119,6 +125,7 @@
 				A984FFFF2278AF4100A7F50B /* Works.swift */,
 				A98400012278AF5F00A7F50B /* HeaderStatus.swift */,
 				A98400032278AF7C00A7F50B /* Skill.swift */,
+				C1E420E12279C3CE00FD0BC3 /* Languages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 				C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */,
 				C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */,
 				C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */,
+				C1E420DD2279B73700FD0BC3 /* LanguagesTableViewCell.swift */,
+				C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 				C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */,
 				C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
+				C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */,
 				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,
 				C1E420D4227983C500FD0BC3 /* AboutAppViewController.swift in Sources */,
 				A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */,
@@ -238,6 +248,8 @@
 				C10746B52274AB4000DBA111 /* AboutMeViewController.swift in Sources */,
 				C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */,
 				A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */,
+				C1E420DE2279B73700FD0BC3 /* LanguagesTableViewCell.swift in Sources */,
+				C1E420E02279B88600FD0BC3 /* EducationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

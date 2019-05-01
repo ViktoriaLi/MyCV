@@ -19,9 +19,12 @@ class InfoAboutMe {
     let contacts = Contacts()
     var skills = [Skill(skillName: "Swift", skillDescription: "Self learning"), Skill(skillName: "C", skillDescription: "Passed several training projects in UNIT Factory"), Skill(skillName: "Xcode", skillDescription: "Self learning during practice IOS development"), Skill(skillName: "UIKit", skillDescription: "Used in training projects"), Skill(skillName: "Foundation", skillDescription: "Used in training projects"), Skill(skillName: "Autolayout", skillDescription: "Used in training projects"), Skill(skillName: "Git", skillDescription: "Used for version control of training projects"), Skill(skillName: "JIRA", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Redmine", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Agile", skillDescription: "Worked on previos job with this methodology"), Skill(skillName: "API", skillDescription: "Made requests in training projects via URLSession and Alamofire"), Skill(skillName: "GCD", skillDescription: "Used in projects"), Skill(skillName: "CoreData", skillDescription: "Familiar with")]
     
-    let languages = ["English", "Ukrainian", "Russian"]
+    var languages: [LanguageKnowledge] =
+        [LanguageKnowledge(name: Languages.English.description, level: LanguageLevel.PreIntermediate.description),
+        LanguageKnowledge(name: Languages.Ukrainian.description, level: LanguageLevel.Native.description),
+        LanguageKnowledge(name: Languages.Russian.description, level: LanguageLevel.Native.description)]
     
-    let education = [Education(institution: "Kyiv National University of Trade and Economics", degree: "Master of Management", duration: "2010 - 2015")]
+    let education = [Education(institution: "UNIT Factory", degree: "Student, Computer science", duration: "2017 - 2020"), Education(institution: "Kyiv National University of Trade and Economics", degree: "Master of Management", duration: "2010 - 2015")]
     
     let summary: [String] =
         ["Currently learning Swift and IOS development, passing courses, doing training projects.",

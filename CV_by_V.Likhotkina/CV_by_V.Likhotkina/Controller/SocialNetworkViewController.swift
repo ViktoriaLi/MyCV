@@ -16,17 +16,8 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
     var webView: WKWebView!
     var networkToLoad: String?
     
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-        webView.navigationDelegate = self
-        webView.uiDelegate = self
-        //view.addSubview(webView)
-        view = webView
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         if let network = networkToLoad {
             let url = URL(string: network)
@@ -45,6 +36,15 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
             activityIndicator.startAnimating()
         }
         
+    }
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
+        //view.addSubview(webView)
+        view = webView
     }
     
     /*func showActivityIndicator(show: Bool) {

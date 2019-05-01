@@ -10,21 +10,64 @@ import UIKit
 
 class AdditionalInfoViewController: UIViewController {
 
+    @IBOutlet weak var educationCollectionView: UICollectionView!
+    @IBOutlet weak var languageTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        educationCollectionView.delegate = self
+        educationCollectionView.dataSource = self
+        languageTableView.delegate = self
+        languageTableView.dataSource = self
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension AdditionalInfoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return InfoAboutMe.shared.education.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = educationCollectionView.dequeueReusableCell(withReuseIdentifier: "educationCell", for: indexPath) as! EducationCollectionViewCell
+        cell.institutionLabel.text = InfoAboutMe.shared.education[indexPath.row].institution
+        cell.degreeLabel.text = InfoAboutMe.shared.education[indexPath.row].degree
+        cell.educationDurationLabel.text = InfoAboutMe.shared.education[indexPath.row].duration
+        return cell
     }
-    */
-
+    
 }
+
+extension AdditionalInfoViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 100.0)
+    }
+    
+    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20.0
+    }*/
+}
+
+extension AdditionalInfoViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return InfoAboutMe.shared.languages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = languageTableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as! LanguagesTableViewCell
+        cell.languageNameLabel.text = InfoAboutMe.shared.languages[indexPath.row].name
+        cell.languageLevelLabel.text = InfoAboutMe.shared.languages[indexPath.row].level
+        
+        return cell
+    }
+    
+    
+}
+
