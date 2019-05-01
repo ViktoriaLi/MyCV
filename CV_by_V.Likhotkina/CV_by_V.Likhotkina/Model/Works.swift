@@ -13,6 +13,7 @@ struct Works {
     let position: String
     let jobDescription: String
     let duration: String
+    var currentStatus: HeaderStatus = .open
     
     init(companyName: String, position: String, jobDescription: String, duration: String) {
         self.companyName = companyName

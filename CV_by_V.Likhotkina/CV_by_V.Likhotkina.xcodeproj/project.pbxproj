@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 49;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400012278AF5F00A7F50B /* HeaderStatus.swift */; };
 		A98400042278AF7C00A7F50B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400032278AF7C00A7F50B /* Skill.swift */; };
 		A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984FFFD2278AF2600A7F50B /* Contacts.swift */; };
-		A9F1A4462278718E00FDE21E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F1A4452278718E00FDE21E /* Info.plist */; };
 		A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */; };
 		C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746A022749DBB00DBA111 /* AppDelegate.swift */; };
 		C10746A622749DBB00DBA111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10746A422749DBB00DBA111 /* Main.storyboard */; };
@@ -24,6 +23,12 @@
 		C10746C22274BAE300DBA111 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C12274BAE300DBA111 /* Education.swift */; };
 		C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */; };
 		C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */; };
+		C1E420D2227983B600FD0BC3 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */; };
+		C1E420D4227983C500FD0BC3 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */; };
+		C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420D522798A7000FD0BC3 /* JobTitleTableViewCell.swift */; };
+		C1E420D822798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */; };
+		C1E420DA22798ADD00FD0BC3 /* JobTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */; };
+		C1E420DC22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,12 @@
 		C10746C12274BAE300DBA111 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkViewController.swift; sourceTree = "<group>"; };
+		C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		C1E420D522798A7000FD0BC3 /* JobTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleTableViewCell.swift; sourceTree = "<group>"; };
+		C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTitleTableViewCell.xib; sourceTree = "<group>"; };
+		C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +104,8 @@
 				C10746BB2274AC3D00DBA111 /* ProfessionalViewController.swift */,
 				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */,
+				C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */,
+				C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +130,10 @@
 				C10746A922749DBE00DBA111 /* LaunchScreen.storyboard */,
 				C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */,
 				A9F1A44A22788AD900FDE21E /* SkillsTableViewCell.swift */,
+				C1E420D522798A7000FD0BC3 /* JobTitleTableViewCell.swift */,
+				C1E420D922798ADD00FD0BC3 /* JobTitleTableViewCell.xib */,
+				C1E420D722798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift */,
+				C1E420DB22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = C107469822749DBB00DBA111 /* Build configuration list for PBXProject "CV_by_V.Likhotkina" */;
-			compatibilityVersion = "Xcode 9.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -189,9 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F1A4462278718E00FDE21E /* Info.plist in Resources */,
 				C10746AB22749DBE00DBA111 /* LaunchScreen.storyboard in Resources */,
 				C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */,
+				C1E420DA22798ADD00FD0BC3 /* JobTitleTableViewCell.xib in Resources */,
+				C1E420DC22798B0400FD0BC3 /* JobDescriptionTableViewCell.xib in Resources */,
 				C10746A622749DBB00DBA111 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,13 +221,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E420D2227983B600FD0BC3 /* ExperienceViewController.swift in Sources */,
+				C1E420D822798A8F00FD0BC3 /* JobDescriptionTableViewCell.swift in Sources */,
 				A98400002278AF4100A7F50B /* Works.swift in Sources */,
 				A98400042278AF7C00A7F50B /* Skill.swift in Sources */,
 				C1E420D0227840BA00FD0BC3 /* SocialNetworkViewController.swift in Sources */,
 				A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */,
 				C10746BC2274AC3D00DBA111 /* ProfessionalViewController.swift in Sources */,
+				C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,
+				C1E420D4227983C500FD0BC3 /* AboutAppViewController.swift in Sources */,
 				A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */,
 				C10746C22274BAE300DBA111 /* Education.swift in Sources */,
 				C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */,
@@ -351,8 +373,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -364,12 +385,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Viktoria.CV-by-V-Likhotkina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,11 +405,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CV_by_V.Likhotkina/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Viktoria.CV-by-V-Likhotkina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

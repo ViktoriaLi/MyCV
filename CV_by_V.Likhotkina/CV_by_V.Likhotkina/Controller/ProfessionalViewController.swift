@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ProfessionalViewController: UIViewController {
+class SkillsViewController: UIViewController {
     @IBOutlet weak var skillsTableView: UITableView!
 
 }
 
-extension ProfessionalViewController: UITableViewDelegate, UITableViewDataSource {
+extension SkillsViewController: UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,6 @@ extension ProfessionalViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        /*if InfoAboutMe.shared.skills[section].currentStatus == .open {
-            return 1
-        }
-        return 2*/
         return InfoAboutMe.shared.skills[section].currentStatus == .open ? 2 : 1
     }
     
@@ -35,12 +31,6 @@ extension ProfessionalViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            /*if (userData?.validatedProjects?[indexPath.section].childProjects.count)! > 0 && userData?.validatedProjects?[indexPath.section].headerStatus == .open {
-                userData?.validatedProjects?[indexPath.section].headerStatus = .close
-            }
-            else if (userData?.validatedProjects?[indexPath.section].childProjects.count)! > 0 {
-                userData?.validatedProjects?[indexPath.section].headerStatus = .open
-            }*/
             if InfoAboutMe.shared.skills[indexPath.section].currentStatus == .open {
                 InfoAboutMe.shared.skills[indexPath.section].currentStatus = .close
             } else if InfoAboutMe.shared.skills[indexPath.section].currentStatus == .close {

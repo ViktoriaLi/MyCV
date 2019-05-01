@@ -17,7 +17,7 @@ class InfoAboutMe {
     let greeting: String = "Hello, I'm Viktoria..."
     
     let contacts = Contacts()
-    var skills = [Skill(skillName: "Swift", skillDescription: "Self learning"), Skill(skillName: "C", skillDescription: ""), Skill(skillName: "Xcode", skillDescription: ""), Skill(skillName: "UIKit", skillDescription: ""), Skill(skillName: "Foundation", skillDescription: ""), Skill(skillName: "Autolayout", skillDescription: ""), Skill(skillName: "Git", skillDescription: ""), Skill(skillName: "JIRA", skillDescription: ""), Skill(skillName: "Redmine", skillDescription: ""), Skill(skillName: "Agile", skillDescription: ""), Skill(skillName: "API", skillDescription: ""), Skill(skillName: "GCD", skillDescription: ""), Skill(skillName: "CoreData", skillDescription: "")]
+    var skills = [Skill(skillName: "Swift", skillDescription: "Self learning"), Skill(skillName: "C", skillDescription: "Passed several training projects in UNIT Factory"), Skill(skillName: "Xcode", skillDescription: "Self learning during practice IOS development"), Skill(skillName: "UIKit", skillDescription: "Used in training projects"), Skill(skillName: "Foundation", skillDescription: "Used in training projects"), Skill(skillName: "Autolayout", skillDescription: "Used in training projects"), Skill(skillName: "Git", skillDescription: "Used for version control of training projects"), Skill(skillName: "JIRA", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Redmine", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Agile", skillDescription: "Worked on previos job with this methodology"), Skill(skillName: "API", skillDescription: "Made requests in training projects via URLSession and Alamofire"), Skill(skillName: "GCD", skillDescription: "Used in projects"), Skill(skillName: "CoreData", skillDescription: "Familiar with")]
     
     let languages = ["English", "Ukrainian", "Russian"]
     
@@ -29,7 +29,7 @@ class InfoAboutMe {
         "Had tested manually websites and mobile apps in commercial projects as QA during 2 years.",
         "Worked with Agile methodology, team work experience."]
     
-    let works =
+    var works =
         [Works(companyName: "UNIT Factory", position: "Student (Swift, C)", jobDescription: "At Unit Factory I started programming and have learned fundamentals like data structures, memory, file management etc. Except projects on C language I passed several intensives, such C++, which gave me OOP basic experience. Also I passed IOS/Swift intensive course and I continue to study this area from that time.", duration: "September 2017 - present"),
          Works(companyName: "ExpoPlatform", position: "QA Engineer", jobDescription: "Grocery IT company which developed event management system consisting of CMS, websites and mobile applications. I worked with team of developers and testers,  created test cases for all products and performed all stages of testing manually.", duration: "Jan 2017 - Sep 2017"),
          Works(companyName: "Security Services Group", position: "QA Engineer", jobDescription: "Startup company which project is  secure messenger (mobile apps and web version). Being a single tester I have organized testing process  and performed all cycle of manual testing.", duration: "Dec 2015 - Jan 2017")
