@@ -299,22 +299,6 @@
             </objects>
             <point key="canvasLocation" x="1976.8" y="-606.74662668665667"/>
         </scene>
-        <!--About app-->
-        <scene sceneID="wcG-9j-O93">
-            <objects>
-                <viewController id="c7V-MB-li7" customClass="AboutAppViewController" customModule="CV_by_V_Likhotkina" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UzK-AB-ZPS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="e9Y-VQ-F6G"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="About app" id="uVf-IH-YsM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xr4-76-Q3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-127" y="1109"/>
-        </scene>
         <!--Education & Languages-->
         <scene sceneID="lNp-PG-t4C">
             <objects>
@@ -598,7 +582,6 @@
                         <segue destination="bSW-6e-jJO" kind="relationship" relationship="viewControllers" id="TEs-RU-6g8"/>
                         <segue destination="9gX-SX-woM" kind="relationship" relationship="viewControllers" id="a5l-5V-xRf"/>
                         <segue destination="tmi-Ir-Lmb" kind="relationship" relationship="viewControllers" id="lxw-9Z-JjQ"/>
-                        <segue destination="c7V-MB-li7" kind="relationship" relationship="viewControllers" id="FbS-7h-yfv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U21-KC-gIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -609,7 +592,7 @@
         <scene sceneID="Ma9-27-bzQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g9E-29-dOI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About me" id="Wj7-ta-VVq"/>
+                    <tabBarItem key="tabBarItem" title="About me" image="avatar" id="Wj7-ta-VVq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cQo-sb-3Sa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -628,7 +611,7 @@
         <scene sceneID="jjy-QU-3JC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSW-6e-jJO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Skills" id="Ovh-HT-c2n"/>
+                    <tabBarItem key="tabBarItem" title="Skills" image="skills" id="Ovh-HT-c2n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C6u-ce-spr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -647,7 +630,7 @@
         <scene sceneID="zme-6z-Zmc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9gX-SX-woM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Experience" id="Rjb-oN-A6N"/>
+                    <tabBarItem key="tabBarItem" title="Experience" image="worker" id="Rjb-oN-A6N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFF-Sa-Hrp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -666,7 +649,7 @@
         <scene sceneID="D51-Ee-fST">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tmi-Ir-Lmb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Other" id="7U6-qa-nA3"/>
+                    <tabBarItem key="tabBarItem" title="Other" image="student" id="7U6-qa-nA3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QAM-bu-gF6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -683,9 +666,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="github-sign" width="512" height="512"/>
-        <image name="gmail" width="512" height="512"/>
-        <image name="linkedin" width="512" height="512"/>
-        <image name="smartphone-call" width="512" height="512"/>
+        <image name="avatar" width="32" height="32"/>
+        <image name="github-sign" width="29" height="29"/>
+        <image name="gmail" width="29" height="29"/>
+        <image name="linkedin" width="29" height="29"/>
+        <image name="skills" width="32" height="32"/>
+        <image name="smartphone-call" width="29" height="29"/>
+        <image name="student" width="32" height="32"/>
+        <image name="worker" width="32" height="32"/>
     </resources>
 </document>
