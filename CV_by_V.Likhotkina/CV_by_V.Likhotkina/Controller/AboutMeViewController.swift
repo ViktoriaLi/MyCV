@@ -16,8 +16,6 @@ class AboutMeViewController: SwipeViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var phoneImageView: UIImageView!
-    @IBOutlet weak var emailImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +25,15 @@ class AboutMeViewController: SwipeViewController {
         nameLabel.text = InfoAboutMe.shared.firstName + " " + InfoAboutMe.shared.lastName
         phoneNumberLabel.text = InfoAboutMe.shared.contacts.phone
         emailLabel.text = InfoAboutMe.shared.contacts.email
+        myPhotoImageView.image = UIImage(named: InfoAboutMe.shared.image)
         
-        if let url = URL(string: InfoAboutMe.shared.image) {
+        /*if let url = URL(string: InfoAboutMe.shared.image) {
             if let data = try? Data(contentsOf: url) {
                 DispatchQueue.main.async {
                     self.myPhotoImageView.image = UIImage(data: data)
                 }
             }
-        }
+        }*/
     }
     
     @IBAction func socialNetworkOpenButton(_ sender: UIButton) {

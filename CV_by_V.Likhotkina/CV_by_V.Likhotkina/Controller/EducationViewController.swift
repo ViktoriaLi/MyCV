@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdditionalInfoViewController: SwipeViewController {
+class EducationViewController: SwipeViewController {
 
     @IBOutlet weak var educationCollectionView: UICollectionView!
     @IBOutlet weak var languageTableView: UITableView!
@@ -22,7 +22,7 @@ class AdditionalInfoViewController: SwipeViewController {
     }
 }
 
-extension AdditionalInfoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension EducationViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return InfoAboutMe.shared.education.count
     }
@@ -32,34 +32,20 @@ extension AdditionalInfoViewController: UICollectionViewDelegate, UICollectionVi
         cell.institutionLabel.text = InfoAboutMe.shared.education[indexPath.row].institution
         cell.degreeLabel.text = InfoAboutMe.shared.education[indexPath.row].degree
         cell.educationDurationLabel.text = InfoAboutMe.shared.education[indexPath.row].duration
-        cell.educationStatus.text = InfoAboutMe.shared.education[indexPath.row].status
-        if cell.educationStatus.text != EducationStatus.inProgress.description {
+        if InfoAboutMe.shared.education[indexPath.row].status == EducationStatus.completed {
             cell.progressButton.isHidden = true
         }
         return cell
     }
-    
 }
 
-extension AdditionalInfoViewController: UICollectionViewDelegateFlowLayout {
+extension EducationViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 100.0)
     }
-    
-    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10.0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20.0
-    }*/
 }
 
-extension AdditionalInfoViewController: UITableViewDelegate, UITableViewDataSource {
+extension EducationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return InfoAboutMe.shared.languages.count
     }
@@ -71,7 +57,5 @@ extension AdditionalInfoViewController: UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
-    
-    
+ 
 }
-

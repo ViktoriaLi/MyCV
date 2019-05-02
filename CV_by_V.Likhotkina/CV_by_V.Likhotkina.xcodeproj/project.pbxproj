@@ -17,7 +17,7 @@
 		C10746A822749DBE00DBA111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10746A722749DBE00DBA111 /* Assets.xcassets */; };
 		C10746AB22749DBE00DBA111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10746A922749DBE00DBA111 /* LaunchScreen.storyboard */; };
 		C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */; };
-		C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */; };
+		C10746BE2274AC5500DBA111 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BD2274AC5500DBA111 /* EducationViewController.swift */; };
 		C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */; };
 		C10746C22274BAE300DBA111 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C12274BAE300DBA111 /* Education.swift */; };
 		C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */; };
@@ -48,7 +48,7 @@
 		C10746A722749DBE00DBA111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10746AA22749DBE00DBA111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
-		C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoViewController.swift; sourceTree = "<group>"; };
+		C10746BD2274AC5500DBA111 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		C10746BF2274B25B00DBA111 /* InfoAboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutMe.swift; sourceTree = "<group>"; };
 		C10746C12274BAE300DBA111 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		C10746C32274C23500DBA111 /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 			children = (
 				A9F1A4452278718E00FDE21E /* Info.plist */,
 				C10746B72274AB7500DBA111 /* Model */,
-				C10746B62274AB4B00DBA111 /* Controller */,
 				C10746B92274ABB200DBA111 /* View */,
+				C10746B62274AB4B00DBA111 /* Controller */,
 				C10746BA2274ABE500DBA111 /* Other */,
 			);
 			path = CV_by_V.Likhotkina;
@@ -112,7 +112,7 @@
 				C1E420CF227840BA00FD0BC3 /* SocialNetworkViewController.swift */,
 				C10746BB2274AC3D00DBA111 /* SkillsViewController.swift */,
 				C1E420D1227983B600FD0BC3 /* ExperienceViewController.swift */,
-				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
+				C10746BD2274AC5500DBA111 /* EducationViewController.swift */,
 				C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */,
 				C1E420E5227B1BED00FD0BC3 /* SwipeViewController.swift */,
 			);
@@ -245,7 +245,7 @@
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C1E420E8227B2E3600FD0BC3 /* AboutMeViewController.swift in Sources */,
 				C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */,
-				C10746BE2274AC5500DBA111 /* AdditionalInfoViewController.swift in Sources */,
+				C10746BE2274AC5500DBA111 /* EducationViewController.swift in Sources */,
 				A984FFFE2278AF2600A7F50B /* Contacts.swift in Sources */,
 				C10746C22274BAE300DBA111 /* Education.swift in Sources */,
 				C10746C02274B25B00DBA111 /* InfoAboutMe.swift in Sources */,
