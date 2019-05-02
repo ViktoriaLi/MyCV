@@ -515,20 +515,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRe-oG-deb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkN-6c-qh0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRe-oG-deb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="667" id="Eaq-Cf-bnU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PRe-oG-deb" secondAttribute="bottom" id="3we-vQ-OYC"/>
+                                    <constraint firstItem="PRe-oG-deb" firstAttribute="centerX" secondItem="BkN-6c-qh0" secondAttribute="centerX" id="B53-Fd-SIS"/>
+                                    <constraint firstItem="PRe-oG-deb" firstAttribute="leading" secondItem="BkN-6c-qh0" secondAttribute="leading" id="LFC-aa-Awa"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRe-oG-deb" secondAttribute="trailing" id="Sfb-Ta-6d6"/>
+                                    <constraint firstItem="PRe-oG-deb" firstAttribute="top" secondItem="BkN-6c-qh0" secondAttribute="top" id="van-6j-9T7"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9IF-YF-FJh" firstAttribute="bottom" secondItem="PRe-oG-deb" secondAttribute="bottom" id="495-cb-enb"/>
-                            <constraint firstItem="9IF-YF-FJh" firstAttribute="trailing" secondItem="PRe-oG-deb" secondAttribute="trailing" id="9qt-EP-Vns"/>
-                            <constraint firstItem="PRe-oG-deb" firstAttribute="top" secondItem="9IF-YF-FJh" secondAttribute="top" id="N22-bG-sLb"/>
-                            <constraint firstItem="PRe-oG-deb" firstAttribute="leading" secondItem="9IF-YF-FJh" secondAttribute="leading" id="zbC-wN-FC4"/>
+                            <constraint firstAttribute="trailing" secondItem="BkN-6c-qh0" secondAttribute="trailing" id="9Ur-Wl-94s"/>
+                            <constraint firstAttribute="bottom" secondItem="BkN-6c-qh0" secondAttribute="bottom" id="VmT-t1-UaW"/>
+                            <constraint firstItem="BkN-6c-qh0" firstAttribute="leading" secondItem="sDS-KK-cOH" secondAttribute="leading" id="WVD-h9-Fzb"/>
+                            <constraint firstItem="BkN-6c-qh0" firstAttribute="top" secondItem="sDS-KK-cOH" secondAttribute="top" id="ppD-Tj-ztb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9IF-YF-FJh"/>
                     </view>
                     <connections>
+                        <outlet property="certificateScrollView" destination="BkN-6c-qh0" id="er5-4n-8OD"/>
                         <outlet property="sertificateImageView" destination="PRe-oG-deb" id="6tW-4s-ZhI"/>
                     </connections>
                 </viewController>
