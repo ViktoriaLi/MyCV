@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExperienceViewController: UIViewController {
+class ExperienceViewController: SwipeViewController {
     
     @IBOutlet weak var jobTableView: UITableView!
     

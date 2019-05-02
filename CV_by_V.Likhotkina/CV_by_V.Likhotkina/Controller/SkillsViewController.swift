@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SkillsViewController: UIViewController {
+class SkillsViewController: SwipeViewController {
     @IBOutlet weak var skillsTableView: UITableView!
     @IBOutlet weak var skillsSearchBar: UISearchBar!
     

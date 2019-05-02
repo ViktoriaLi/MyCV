@@ -387,6 +387,7 @@
                                                             <state key="normal" title="See progress"/>
                                                             <connections>
                                                                 <action selector="showProgress:" destination="3fA-C7-XAx" eventType="touchUpInside" id="Lbp-nA-1jj"/>
+                                                                <segue destination="SF2-6R-ZoS" kind="show" id="Ovu-xr-55j"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -412,7 +413,9 @@
                                                 <connections>
                                                     <outlet property="degreeLabel" destination="bbu-Tg-Y0o" id="ay6-JS-bB8"/>
                                                     <outlet property="educationDurationLabel" destination="VJZ-c0-Byk" id="R0F-fC-yHH"/>
+                                                    <outlet property="educationStatus" destination="kDQ-oX-OHr" id="C2b-3U-UGg"/>
                                                     <outlet property="institutionLabel" destination="RbR-fU-Wge" id="kzS-re-uY1"/>
+                                                    <outlet property="progressButton" destination="Tfq-Fu-qD9" id="ccq-tQ-vn5"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -507,13 +510,13 @@
         <!--Show Sertificate View Controller-->
         <scene sceneID="oCm-sS-B4F">
             <objects>
-                <viewController id="SF2-6R-ZoS" customClass="ShowSertificateViewController" customModule="CV_by_V_Likhotkina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showCertificate" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SF2-6R-ZoS" customClass="ShowSertificateViewController" customModule="CV_by_V_Likhotkina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sDS-KK-cOH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRe-oG-deb">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

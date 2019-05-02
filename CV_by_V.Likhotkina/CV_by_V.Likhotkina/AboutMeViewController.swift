@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
+class AboutMeViewController: SwipeViewController {
 
     @IBOutlet weak var myPhotoImageView: UIImageView!
     @IBOutlet weak var greetingLabel: UILabel!

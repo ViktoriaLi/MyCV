@@ -33,6 +33,7 @@
 		C1E420E02279B88600FD0BC3 /* EducationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */; };
 		C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E12279C3CE00FD0BC3 /* Languages.swift */; };
 		C1E420E4227A0C9D00FD0BC3 /* ShowSertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */; };
+		C1E420E6227B1BED00FD0BC3 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E420E5227B1BED00FD0BC3 /* SwipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		C1E420DF2279B88500FD0BC3 /* EducationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1E420E12279C3CE00FD0BC3 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSertificateViewController.swift; sourceTree = "<group>"; };
+		C1E420E5227B1BED00FD0BC3 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				C10746BD2274AC5500DBA111 /* AdditionalInfoViewController.swift */,
 				C1E420D3227983C500FD0BC3 /* AboutAppViewController.swift */,
 				C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */,
+				C1E420E5227B1BED00FD0BC3 /* SwipeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C10746B52274AB4000DBA111 /* AboutMeViewController.swift in Sources */,
 				C10746A122749DBB00DBA111 /* AppDelegate.swift in Sources */,
 				A9F1A44B22788AD900FDE21E /* SkillsTableViewCell.swift in Sources */,
+				C1E420E6227B1BED00FD0BC3 /* SwipeViewController.swift in Sources */,
 				C1E420DE2279B73700FD0BC3 /* LanguagesTableViewCell.swift in Sources */,
 				C1E420E02279B88600FD0BC3 /* EducationCollectionViewCell.swift in Sources */,
 			);

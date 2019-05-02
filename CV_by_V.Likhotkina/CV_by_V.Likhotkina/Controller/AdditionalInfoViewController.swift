@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdditionalInfoViewController: UIViewController {
+class AdditionalInfoViewController: SwipeViewController {
 
     @IBOutlet weak var educationCollectionView: UICollectionView!
     @IBOutlet weak var languageTableView: UITableView!
@@ -32,6 +32,10 @@ extension AdditionalInfoViewController: UICollectionViewDelegate, UICollectionVi
         cell.institutionLabel.text = InfoAboutMe.shared.education[indexPath.row].institution
         cell.degreeLabel.text = InfoAboutMe.shared.education[indexPath.row].degree
         cell.educationDurationLabel.text = InfoAboutMe.shared.education[indexPath.row].duration
+        cell.educationStatus.text = InfoAboutMe.shared.education[indexPath.row].status
+        if cell.educationStatus.text != EducationStatus.inProgress.description {
+            cell.progressButton.isHidden = true
+        }
         return cell
     }
     

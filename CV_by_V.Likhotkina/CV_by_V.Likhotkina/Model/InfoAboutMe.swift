@@ -21,10 +21,11 @@ class InfoAboutMe {
     
     var languages: [LanguageKnowledge] =
         [LanguageKnowledge(name: Languages.English.description, level: LanguageLevel.PreIntermediate.description),
-        LanguageKnowledge(name: Languages.Ukrainian.description, level: LanguageLevel.Native.description),
-        LanguageKnowledge(name: Languages.Russian.description, level: LanguageLevel.Native.description)]
+         LanguageKnowledge(name: Languages.Ukrainian.description, level: LanguageLevel.Native.description),
+         LanguageKnowledge(name: Languages.Russian.description, level: LanguageLevel.Native.description)]
     
-    let education = [Education(institution: "UNIT Factory", degree: "Student, Computer science", duration: "2017 - 2020"), Education(institution: "Kyiv National University of Trade and Economics", degree: "Master of Management", duration: "2010 - 2015")]
+    let education = [Education(institution: "UNIT Factory", degree: "Student, Computer science", duration: "2017 - 2020", status: EducationStatus.inProgress.description),
+        Education(institution: "Kyiv National University of Trade and Economics", degree: "Master of Management", duration: "2010 - 2015", status: EducationStatus.completed.description)]
     
     let summary: [String] =
         ["Currently learning Swift and IOS development, passing courses, doing training projects.",
