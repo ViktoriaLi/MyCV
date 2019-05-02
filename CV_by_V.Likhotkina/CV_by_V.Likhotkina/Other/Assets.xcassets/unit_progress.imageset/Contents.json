@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "UnitProgress.png",
+      "filename" : "unit_progress.png",
       "scale" : "1x"
     },
     {

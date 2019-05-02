@@ -13,7 +13,7 @@ class ShowSertificateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sertificateImageView.image = UIImage(named: "UnitProgress")
+        sertificateImageView.image = UIImage(named: "unit_progress")
         // Do any additional setup after loading the view.
     }
     

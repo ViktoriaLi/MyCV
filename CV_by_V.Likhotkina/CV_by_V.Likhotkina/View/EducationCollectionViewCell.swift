@@ -17,7 +17,6 @@ class EducationCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var progressButton: UIButton!
     
     @IBAction func showProgress(_ sender: UIButton) {
-        print("test")
         //let storyboard = UIStoryboard(name: "Main", bundle: nil)
         //let controller = storyboard.instantiateViewController(withIdentifier: "showCertificate") as! ShowSertificateViewController
         /*let networkToLoad: String?
