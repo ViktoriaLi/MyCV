@@ -1,0 +1,81 @@
+
+/* Class = "UILabel"; text = "greetingText"; ObjectID = "79b-F5-E9C"; */
+"79b-F5-E9C.text" = "greetingText";
+
+/* Class = "UITabBarItem"; title = "Education"; ObjectID = "7U6-qa-nA3"; */
+"7U6-qa-nA3.title" = "Education";
+
+/* Class = "UILabel"; text = "text"; ObjectID = "9b6-pu-zfd"; */
+"9b6-pu-zfd.text" = "text";
+
+/* Class = "UIViewController"; title = "Summary"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Summary";
+
+/* Class = "UILabel"; text = "About me"; ObjectID = "DeD-I4-IRV"; */
+"DeD-I4-IRV.text" = "About me";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OVT-eE-VQf"; */
+"OVT-eE-VQf.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Summary & Contacts"; ObjectID = "Oa3-Ei-lcQ"; */
+"Oa3-Ei-lcQ.title" = "Summary & Contacts";
+
+/* Class = "UITabBarItem"; title = "Skills"; ObjectID = "Ovh-HT-c2n"; */
+"Ovh-HT-c2n.title" = "Skills";
+
+/* Class = "UINavigationItem"; title = "Education & Languages"; ObjectID = "PfT-Hj-i6j"; */
+"PfT-Hj-i6j.title" = "Education & Languages";
+
+/* Class = "UILabel"; text = "Instituion"; ObjectID = "RbR-fU-Wge"; */
+"RbR-fU-Wge.text" = "Instituion";
+
+/* Class = "UITabBarItem"; title = "Experience"; ObjectID = "Rjb-oN-A6N"; */
+"Rjb-oN-A6N.title" = "Experience";
+
+/* Class = "UIButton"; normalTitle = "See progress"; ObjectID = "Tfq-Fu-qD9"; */
+"Tfq-Fu-qD9.normalTitle" = "See progress";
+
+/* Class = "UILabel"; text = "Summary"; ObjectID = "VDp-Vx-fzc"; */
+"VDp-Vx-fzc.text" = "Summary";
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "VJZ-c0-Byk"; */
+"VJZ-c0-Byk.text" = "Duration";
+
+/* Class = "UITabBarItem"; title = "About me"; ObjectID = "Wj7-ta-VVq"; */
+"Wj7-ta-VVq.title" = "About me";
+
+/* Class = "UILabel"; text = "Skill Name"; ObjectID = "Xz2-a2-IYI"; */
+"Xz2-a2-IYI.text" = "Skill Name";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "YEH-c6-Ty6"; */
+"YEH-c6-Ty6.text" = "Name";
+
+/* Class = "UILabel"; text = "Degree"; ObjectID = "bbu-Tg-Y0o"; */
+"bbu-Tg-Y0o.text" = "Degree";
+
+/* Class = "UINavigationItem"; title = " Skills"; ObjectID = "gSy-g9-qMa"; */
+"gSy-g9-qMa.title" = " Skills";
+
+/* Class = "UILabel"; text = "Languages"; ObjectID = "ibc-GS-KfI"; */
+"ibc-GS-KfI.text" = "Languages";
+
+/* Class = "UILabel"; text = "phoneNumber"; ObjectID = "kXj-IW-pEj"; */
+"kXj-IW-pEj.text" = "phoneNumber";
+
+/* Class = "UINavigationItem"; title = "Work experience"; ObjectID = "lT0-IR-uwe"; */
+"lT0-IR-uwe.title" = "Work experience";
+
+/* Class = "UILabel"; text = "Education"; ObjectID = "nUM-dp-vs1"; */
+"nUM-dp-vs1.text" = "Education";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pDZ-1H-ZB9"; */
+"pDZ-1H-ZB9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qWp-Ze-z1O"; */
+"qWp-Ze-z1O.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "email"; ObjectID = "ykZ-on-HL8"; */
+"ykZ-on-HL8.text" = "email";
+
+/* Class = "UITabBarItem"; title = "Portfolio"; ObjectID = "zJM-Uk-oKu"; */
+"zJM-Uk-oKu.title" = "Portfolio";

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobDescriptionCell" rowHeight="218" id="mai-40-81g" customClass="JobDescriptionTableViewCell" customModule="CV_by_V_Likhotkina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mai-40-81g" id="6Q0-hm-WCf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="217.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-Kn-uWh">
+                        <rect key="frame" x="10" y="53.5" width="394" height="154"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56i-gQ-efi">
+                        <rect key="frame" x="338" y="10" width="66" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sj8-Kn-uWh" secondAttribute="bottom" constant="10" id="T43-3o-4PS"/>
+                    <constraint firstItem="sj8-Kn-uWh" firstAttribute="leading" secondItem="6Q0-hm-WCf" secondAttribute="leading" constant="10" id="VuS-DK-zsL"/>
+                    <constraint firstAttribute="trailing" secondItem="56i-gQ-efi" secondAttribute="trailing" constant="10" id="YOo-Ku-LCG"/>
+                    <constraint firstItem="56i-gQ-efi" firstAttribute="top" secondItem="6Q0-hm-WCf" secondAttribute="top" constant="10" id="aqc-Rh-J0w"/>
+                    <constraint firstAttribute="trailing" secondItem="sj8-Kn-uWh" secondAttribute="trailing" constant="10" id="jPu-qP-Mza"/>
+                    <constraint firstItem="sj8-Kn-uWh" firstAttribute="top" secondItem="56i-gQ-efi" secondAttribute="bottom" constant="20" id="xdz-qc-GVq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="durationLabel" destination="56i-gQ-efi" id="wvQ-Qt-oKx"/>
+                <outlet property="jobDescriptionLabel" destination="sj8-Kn-uWh" id="A2I-vI-Bw7"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="-164.0625"/>
+        </tableViewCell>
+    </objects>
+</document>

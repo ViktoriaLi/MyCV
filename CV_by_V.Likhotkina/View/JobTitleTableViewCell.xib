@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="jobTitleCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobTitleCell" id="BB4-xt-xkP" customClass="JobTitleTableViewCell" customModule="CV_by_V_Likhotkina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BB4-xt-xkP" id="FgJ-eA-owk">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8T-Dy-TUX">
+                        <rect key="frame" x="12" y="10" width="75.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUS-JS-d0B">
+                        <rect key="frame" x="339" y="12" width="65" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lUS-JS-d0B" firstAttribute="top" secondItem="FgJ-eA-owk" secondAttribute="top" constant="12" id="Eni-iK-VCE"/>
+                    <constraint firstItem="lUS-JS-d0B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V8T-Dy-TUX" secondAttribute="trailing" constant="10" id="G1E-iE-fBH"/>
+                    <constraint firstAttribute="bottom" secondItem="lUS-JS-d0B" secondAttribute="bottom" constant="12" id="PbC-dZ-nOu"/>
+                    <constraint firstAttribute="bottom" secondItem="V8T-Dy-TUX" secondAttribute="bottom" constant="12" id="TKj-fD-qSb"/>
+                    <constraint firstItem="V8T-Dy-TUX" firstAttribute="leading" secondItem="FgJ-eA-owk" secondAttribute="leading" constant="12" id="TVj-AD-11n"/>
+                    <constraint firstAttribute="trailing" secondItem="lUS-JS-d0B" secondAttribute="trailing" constant="10" id="Uxd-al-js6"/>
+                    <constraint firstItem="V8T-Dy-TUX" firstAttribute="top" secondItem="FgJ-eA-owk" secondAttribute="top" constant="10" id="uaO-8r-Z37"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="jobTitleCell"/>
+            <connections>
+                <outlet property="companyNameLabel" destination="V8T-Dy-TUX" id="MJd-j7-D3i"/>
+                <outlet property="positionLabel" destination="lUS-JS-d0B" id="iaj-xR-j6J"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="-170"/>
+        </tableViewCell>
+    </objects>
+</document>
