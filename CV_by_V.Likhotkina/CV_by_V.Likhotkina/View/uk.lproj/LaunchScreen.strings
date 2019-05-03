@@ -1,12 +1,12 @@
-
 /* Class = "UILabel"; text = "for"; ObjectID = "1Aa-XZ-m8L"; */
-"1Aa-XZ-m8L.text" = "for";
+"1Aa-XZ-m8L.text" = "для";
 
 /* Class = "UILabel"; text = "CV by"; ObjectID = "QF8-ca-g5D"; */
-"QF8-ca-g5D.text" = "CV by";
+"QF8-ca-g5D.text" = "Резюме";
 
 /* Class = "UILabel"; text = "Viktoria Likhotkina"; ObjectID = "RGT-v7-GiN"; */
-"RGT-v7-GiN.text" = "Viktoria Likhotkina";
+"RGT-v7-GiN.text" = "Вікторії Ліхоткіної";
 
 /* Class = "UILabel"; text = "MacPaw Summer Internship 2019"; ObjectID = "xhV-Yc-yNE"; */
-"xhV-Yc-yNE.text" = "MacPaw Summer Internship 2019";
+"xhV-Yc-yNE.text" = "літнього стажування в MacPaw, 2019";
+

@@ -16,7 +16,7 @@ class AboutMeViewController: SwipeViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         summaryCollectionView.delegate = self
@@ -79,3 +79,4 @@ extension AboutMeViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
+

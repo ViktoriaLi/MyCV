@@ -9,10 +9,17 @@
 import Foundation
 
 enum Languages: String {
-    case English = "English", Ukrainian = "Ukrainian", Russian = "Russian"
+    case English, Ukrainian, Russian
     var description : String {
         get {
-            return self.rawValue
+            switch self {
+            case .English:
+                return NSLocalizedString("English", comment: "")
+            case .Ukrainian:
+                return NSLocalizedString("Ukrainian", comment: "")
+            case .Russian:
+                return NSLocalizedString("Russian", comment: "")
+            }
         }
     }
 }
