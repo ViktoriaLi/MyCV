@@ -14,7 +14,7 @@ class InfoAboutMe {
     let firstName: String = "Viktoria"
     let lastName: String = "Likhotkina"
     let image: String = "cv_photo"
-    let greeting: String = "Hello, I'm Viktoria..."
+    let greeting: String = "Gaining experience in real projects as an iOS developer for further work in this direction"
     
     let contacts = Contacts()
     var skills = [Skill(skillName: "Swift", skillDescription: "Self learning"), Skill(skillName: "C", skillDescription: "Passed several training projects in UNIT Factory"), Skill(skillName: "Xcode", skillDescription: "Self learning during practice IOS development"), Skill(skillName: "UIKit", skillDescription: "Used in training projects"), Skill(skillName: "Foundation", skillDescription: "Used in training projects"), Skill(skillName: "Autolayout", skillDescription: "Used in training projects"), Skill(skillName: "Git", skillDescription: "Used for version control of training projects"), Skill(skillName: "JIRA", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Redmine", skillDescription: "Used on previos job for bug tracking"), Skill(skillName: "Agile", skillDescription: "Worked on previos job with this methodology"), Skill(skillName: "API", skillDescription: "Made requests in training projects via URLSession and Alamofire"), Skill(skillName: "GCD", skillDescription: "Used in projects"), Skill(skillName: "CoreData", skillDescription: "Familiar with")]
@@ -28,9 +28,9 @@ class InfoAboutMe {
         Education(institution: "Kyiv National University of Trade and Economics", degree: "Master of Management", duration: "2010 - 2015", status: EducationStatus.completed)]
     
     let summary: [String] =
-        ["Currently learning Swift and IOS development, passing courses, doing training projects.",
+        ["Currently learning IOS development, passing courses, doing training projects.",
         "One and half year in UNIT Factory with 10 learning projects done on C language.",
-        "Had tested manually websites and mobile apps in commercial projects as QA during 2 years.",
+        "Had tested websites and mobile apps in commercial projects as QA during 2 years.",
         "Worked with Agile methodology, team work experience."]
     
     var works =
