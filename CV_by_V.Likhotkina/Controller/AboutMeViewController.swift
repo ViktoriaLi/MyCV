@@ -38,7 +38,7 @@ class AboutMeViewController: SwipeViewController {
     
     @IBAction func socialNetworkOpenButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "socialNetwork") as! SocialNetworkViewController
+        let controller = storyboard.instantiateViewController(withIdentifier: "socialNetwork") as? SocialNetworkViewController
         let networkToLoad: String?
         switch sender.tag {
         case 0:
@@ -48,8 +48,10 @@ class AboutMeViewController: SwipeViewController {
         default:
             networkToLoad = nil
         }
-        controller.networkToLoad = networkToLoad
-        self.navigationController?.pushViewController(controller, animated: true)
+        controller?.networkToLoad = networkToLoad
+        if controller != nil {
+            self.navigationController?.pushViewController(controller!, animated: true)
+        }
     }
     
 }
@@ -61,12 +63,12 @@ extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "summaryCell", for: indexPath) as! SummaryCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "summaryCell", for: indexPath) as? SummaryCollectionViewCell
         
-        cell.summaryDescription.text = InfoAboutMe.shared.summary[indexPath.row]
-        cell.layer.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        cell?.summaryDescription.text = InfoAboutMe.shared.summary[indexPath.row]
+        cell?.layer.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         
-        return cell
+        return cell!
     }
 }
 

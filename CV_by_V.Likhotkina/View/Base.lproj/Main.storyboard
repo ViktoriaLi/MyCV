@@ -30,7 +30,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-WQ-Vrg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xlf-n8-5LC">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xlf-n8-5LC">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uzo-4E-Uef">
@@ -46,7 +46,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoW-D5-eCc">
-                                                <rect key="frame" x="170" y="0.0" width="205" height="146"/>
+                                                <rect key="frame" x="160" y="0.0" width="215" height="146"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEH-c6-Ty6">
                                                         <rect key="frame" x="0.0" y="0.0" width="47.5" height="29"/>
@@ -104,19 +104,19 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Objective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-I4-IRV">
-                                        <rect key="frame" x="20" y="170" width="345" height="23.5"/>
+                                        <rect key="frame" x="10" y="170" width="355" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="greetingText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79b-F5-E9C">
-                                        <rect key="frame" x="30" y="203.5" width="335" height="23.5"/>
+                                        <rect key="frame" x="20" y="203.5" width="345" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDp-Vx-fzc">
-                                        <rect key="frame" x="20" y="247" width="74" height="23.5"/>
+                                        <rect key="frame" x="10" y="247" width="74" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -168,9 +168,9 @@
                                     <constraint firstItem="Xlf-n8-5LC" firstAttribute="top" secondItem="1Gh-WQ-Vrg" secondAttribute="top" id="Gic-Wb-pL6"/>
                                     <constraint firstItem="DeD-I4-IRV" firstAttribute="top" secondItem="Xlf-n8-5LC" secondAttribute="bottom" constant="20" id="NGz-cg-TfW"/>
                                     <constraint firstItem="Xlf-n8-5LC" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" id="R0S-cc-RBW"/>
-                                    <constraint firstItem="VDp-Vx-fzc" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="20" id="YGG-1s-LtI"/>
-                                    <constraint firstItem="79b-F5-E9C" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="30" id="dJO-DP-a0X"/>
-                                    <constraint firstItem="DeD-I4-IRV" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="20" id="f0H-fe-kRX"/>
+                                    <constraint firstItem="VDp-Vx-fzc" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="10" id="YGG-1s-LtI"/>
+                                    <constraint firstItem="79b-F5-E9C" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="20" id="dJO-DP-a0X"/>
+                                    <constraint firstItem="DeD-I4-IRV" firstAttribute="leading" secondItem="1Gh-WQ-Vrg" secondAttribute="leading" constant="10" id="f0H-fe-kRX"/>
                                     <constraint firstItem="oXF-Vh-8W5" firstAttribute="width" secondItem="1Gh-WQ-Vrg" secondAttribute="width" id="hAQ-UB-Pjr"/>
                                     <constraint firstAttribute="trailing" secondItem="DeD-I4-IRV" secondAttribute="trailing" constant="10" id="icm-3L-S3k"/>
                                     <constraint firstAttribute="trailing" secondItem="oXF-Vh-8W5" secondAttribute="trailing" id="qAE-J3-2FS"/>
@@ -325,8 +325,8 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Instituion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbR-fU-Wge">
-                                                            <rect key="frame" x="10" y="10" width="71.5" height="23.5"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                            <rect key="frame" x="10" y="10" width="74.5" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>

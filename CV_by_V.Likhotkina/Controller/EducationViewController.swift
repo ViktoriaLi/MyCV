@@ -28,14 +28,14 @@ extension EducationViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = educationCollectionView.dequeueReusableCell(withReuseIdentifier: "educationCell", for: indexPath) as! EducationCollectionViewCell
-        cell.institutionLabel.text = InfoAboutMe.shared.education[indexPath.row].institution
-        cell.degreeLabel.text = InfoAboutMe.shared.education[indexPath.row].degree
-        cell.educationDurationLabel.text = InfoAboutMe.shared.education[indexPath.row].duration
+        let cell = educationCollectionView.dequeueReusableCell(withReuseIdentifier: "educationCell", for: indexPath) as? EducationCollectionViewCell
+        cell?.institutionLabel.text = InfoAboutMe.shared.education[indexPath.row].institution
+        cell?.degreeLabel.text = InfoAboutMe.shared.education[indexPath.row].degree
+        cell?.educationDurationLabel.text = InfoAboutMe.shared.education[indexPath.row].duration
         if InfoAboutMe.shared.education[indexPath.row].status == EducationStatus.completed {
-            cell.progressButton.isHidden = true
+            cell?.progressButton.isHidden = true
         }
-        return cell
+        return cell!
     }
 }
 
@@ -51,11 +51,11 @@ extension EducationViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = languageTableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as! LanguagesTableViewCell
-        cell.languageNameLabel.text = InfoAboutMe.shared.languages[indexPath.row].name
-        cell.languageLevelLabel.text = InfoAboutMe.shared.languages[indexPath.row].level
+        let cell = languageTableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as? LanguagesTableViewCell
+        cell?.languageNameLabel.text = InfoAboutMe.shared.languages[indexPath.row].name
+        cell?.languageLevelLabel.text = InfoAboutMe.shared.languages[indexPath.row].level
         
-        return cell
+        return cell!
     }
  
 }

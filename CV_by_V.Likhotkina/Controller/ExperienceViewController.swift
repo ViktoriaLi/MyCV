@@ -47,16 +47,15 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "jobTitleCell", for: indexPath) as! JobTitleTableViewCell
-            cell.companyNameLabel?.text = InfoAboutMe.shared.works[indexPath.section].companyName
-            cell.positionLabel.text = InfoAboutMe.shared.works[indexPath.section].position
-            
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "jobTitleCell", for: indexPath) as? JobTitleTableViewCell
+            cell?.companyNameLabel?.text = InfoAboutMe.shared.works[indexPath.section].companyName
+            cell?.positionLabel.text = InfoAboutMe.shared.works[indexPath.section].position
+            return cell!
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "jobDescriptionCell", for: indexPath) as! JobDescriptionTableViewCell
-            cell.jobDescriptionLabel.text = InfoAboutMe.shared.works[indexPath.section].jobDescription
-            cell.durationLabel.text = InfoAboutMe.shared.works[indexPath.section].duration
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "jobDescriptionCell", for: indexPath) as? JobDescriptionTableViewCell
+            cell?.jobDescriptionLabel.text = InfoAboutMe.shared.works[indexPath.section].jobDescription
+            cell?.durationLabel.text = InfoAboutMe.shared.works[indexPath.section].duration
+            return cell!
         }
     }
 }

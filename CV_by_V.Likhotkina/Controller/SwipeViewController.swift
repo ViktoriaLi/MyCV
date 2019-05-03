@@ -12,7 +12,9 @@ class SwipeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        guard self.tabBarController != nil, self.tabBarController?.viewControllers != nil else {
+            return
+        }
         let left = UISwipeGestureRecognizer(target: self, action: #selector(swipeViewLeft))
         left.direction = .left
         self.view.addGestureRecognizer(left)

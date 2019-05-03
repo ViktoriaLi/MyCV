@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+class SocialNetworkViewController: UIViewController {
     
     var activityIndicator: UIActivityIndicatorView!
     
@@ -20,22 +20,12 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
         super.viewDidLoad()
         
         if let network = networkToLoad {
-            let url = URL(string: network)
-            let request = URLRequest(url: url!)
-            webView.load(request)
-            
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
-            
-            activityIndicator = UIActivityIndicatorView()
-            activityIndicator.center = self.view.center
-            activityIndicator.hidesWhenStopped = true
-            //activityIndicator.style = UIActivityIndicatorView.Style.gray
-            activityIndicator.color = UIColor.black
-            webView.addSubview(activityIndicator)
-            
-            activityIndicator.startAnimating()
+            if let url = URL(string: network) {
+                let request = URLRequest(url: url)
+                webView.load(request)
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            }
         }
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,49 +38,18 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
         webView.uiDelegate = self
-        //view.addSubview(webView)
         view = webView
     }
-    
-    /*func showActivityIndicator(show: Bool) {
-        if show {
-            activityIndicator.startAnimating()
-        } else {
-            activityIndicator.stopAnimating()
-        }
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        showActivityIndicator(show: false)
-    }
-    
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        showActivityIndicator(show: true)
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        showActivityIndicator(show: false)
-    }*/
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activityIndicator.stopAnimating()
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activityIndicator.stopAnimating()
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-    }
-    
-    /*func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.navigationController?.title
-         = webView.stringByEvaluatingJavaScript(from: "document.title")
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.navigationController?.title
-            = webView.title
-    }*/
-    
 }
 
+extension SocialNetworkViewController: WKNavigationDelegate, WKUIDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activityIndicator.stopAnimating()
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        activityIndicator.stopAnimating()
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+}
