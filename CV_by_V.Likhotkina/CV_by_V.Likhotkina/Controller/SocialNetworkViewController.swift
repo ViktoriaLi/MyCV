@@ -29,7 +29,7 @@ class SocialNetworkViewController: UIViewController, WKNavigationDelegate, WKUID
             activityIndicator = UIActivityIndicatorView()
             activityIndicator.center = self.view.center
             activityIndicator.hidesWhenStopped = true
-            activityIndicator.style = UIActivityIndicatorView.Style.gray
+            //activityIndicator.style = UIActivityIndicatorView.Style.gray
             activityIndicator.color = UIColor.black
             webView.addSubview(activityIndicator)
             

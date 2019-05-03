@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIP-gM-CCK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIP-gM-CCK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+            <string>Avenir-LightOblique</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Summary-->
         <scene sceneID="tne-QT-ifu">
@@ -550,6 +559,7 @@
                         <segue destination="bSW-6e-jJO" kind="relationship" relationship="viewControllers" id="TEs-RU-6g8"/>
                         <segue destination="9gX-SX-woM" kind="relationship" relationship="viewControllers" id="a5l-5V-xRf"/>
                         <segue destination="tmi-Ir-Lmb" kind="relationship" relationship="viewControllers" id="lxw-9Z-JjQ"/>
+                        <segue destination="qag-73-LWJ" kind="relationship" relationship="viewControllers" id="T1v-5t-IoL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U21-KC-gIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -612,6 +622,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Az2-cd-fXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037.5999999999999" y="233.43328335832086"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="cBn-nq-yD1">
+            <objects>
+                <viewController id="qag-73-LWJ" customClass="PortfolioViewController" customModule="CV_by_V_Likhotkina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqP-PT-SgR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-fR-p7H">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gzd-fR-p7H" firstAttribute="top" secondItem="tXM-8U-bK9" secondAttribute="top" id="6AR-vQ-4aW"/>
+                            <constraint firstItem="gzd-fR-p7H" firstAttribute="leading" secondItem="tXM-8U-bK9" secondAttribute="leading" id="B27-mz-jTb"/>
+                            <constraint firstItem="tXM-8U-bK9" firstAttribute="bottom" secondItem="gzd-fR-p7H" secondAttribute="bottom" id="NNT-Sv-EKG"/>
+                            <constraint firstItem="tXM-8U-bK9" firstAttribute="trailing" secondItem="gzd-fR-p7H" secondAttribute="trailing" id="scL-h4-1hq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tXM-8U-bK9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Portfolio" id="zJM-Uk-oKu"/>
+                    <connections>
+                        <outlet property="projectImageView" destination="gzd-fR-p7H" id="qKS-uw-r6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XC-Uz-m6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="1109"/>
         </scene>
         <!--Education-->
         <scene sceneID="D51-Ee-fST">
