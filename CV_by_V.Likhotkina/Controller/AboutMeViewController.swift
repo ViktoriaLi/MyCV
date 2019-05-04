@@ -70,6 +70,14 @@ extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewData
         
         return cell!
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard let flowLayout = summaryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
+    }
 }
 
 extension AboutMeViewController: UICollectionViewDelegateFlowLayout {

@@ -20,6 +20,7 @@ class SkillsViewController: SwipeViewController {
         skillsTableView.dataSource = self
         skillsSearchBar.delegate = self
         filteredSkills = InfoAboutMe.shared.skills
+        
     }
     
 }
