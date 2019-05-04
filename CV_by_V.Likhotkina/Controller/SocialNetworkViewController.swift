@@ -9,9 +9,7 @@
 import UIKit
 import WebKit
 
-class SocialNetworkViewController: UIViewController {
-    
-    var activityIndicator: UIActivityIndicatorView!
+class SocialNetworkViewController: UIViewController {    
     
     var webView: WKWebView!
     var networkToLoad: String?
@@ -44,12 +42,10 @@ class SocialNetworkViewController: UIViewController {
 
 extension SocialNetworkViewController: WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activityIndicator.stopAnimating()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activityIndicator.stopAnimating()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }

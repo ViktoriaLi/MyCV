@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A93170A0227C593200A322B9 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931709F227C593200A322B9 /* PortfolioViewController.swift */; };
 		A98400002278AF4100A7F50B /* Works.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984FFFF2278AF4100A7F50B /* Works.swift */; };
 		A98400022278AF5F00A7F50B /* HeaderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400012278AF5F00A7F50B /* HeaderStatus.swift */; };
 		A98400042278AF7C00A7F50B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98400032278AF7C00A7F50B /* Skill.swift */; };
@@ -37,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A931709F227C593200A322B9 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		A98400012278AF5F00A7F50B /* HeaderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStatus.swift; sourceTree = "<group>"; };
 		A98400032278AF7C00A7F50B /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		A984FFFD2278AF2600A7F50B /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				C10746BD2274AC5500DBA111 /* EducationViewController.swift */,
 				C1E420E3227A0C9D00FD0BC3 /* ShowSertificateViewController.swift */,
 				C1E420E5227B1BED00FD0BC3 /* SwipeViewController.swift */,
-				A931709F227C593200A322B9 /* PortfolioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,7 +243,6 @@
 				C1E420E4227A0C9D00FD0BC3 /* ShowSertificateViewController.swift in Sources */,
 				C10746BC2274AC3D00DBA111 /* SkillsViewController.swift in Sources */,
 				C1E420D622798A7000FD0BC3 /* JobTitleTableViewCell.swift in Sources */,
-				A93170A0227C593200A322B9 /* PortfolioViewController.swift in Sources */,
 				C10746C42274C23500DBA111 /* SummaryCollectionViewCell.swift in Sources */,
 				C1E420E8227B2E3600FD0BC3 /* AboutMeViewController.swift in Sources */,
 				C1E420E22279C3CE00FD0BC3 /* Languages.swift in Sources */,
