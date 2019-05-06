@@ -17,13 +17,8 @@ class ShowSertificateViewController: UIViewController {
         super.viewDidLoad()
         certificateScrollView.delegate = self
         sertificateImageView.image = UIImage(named: "unit_progress")
-        /*sertificateImageView.sizeToFit()
-        certificateScrollView?.contentSize = sertificateImageView.frame.size
-        certificateScrollView.addSubview(sertificateImageView)
-        view.addSubview(certificateScrollView)*/
         certificateScrollView.minimumZoomScale = 1.0
         certificateScrollView.maximumZoomScale = 10.0
-        
     }
 }
 

@@ -69,5 +69,4 @@ extension EducationViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell!
     }
- 
 }

@@ -9,8 +9,6 @@
 import UIKit
 
 class JobDescriptionTableViewCell: UITableViewCell {
-
     @IBOutlet weak var jobDescriptionLabel: UILabel!
-    
     @IBOutlet weak var durationLabel: UILabel!
 }

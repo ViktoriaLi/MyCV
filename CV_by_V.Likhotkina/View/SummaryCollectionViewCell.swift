@@ -9,7 +9,5 @@
 import UIKit
 
 class SummaryCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var summaryDescription: UILabel!
-    
 }

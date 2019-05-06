@@ -53,7 +53,6 @@ class AboutMeViewController: SwipeViewController {
             self.navigationController?.pushViewController(controller!, animated: true)
         }
     }
-    
 }
 
 extension AboutMeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
@@ -88,5 +87,4 @@ extension AboutMeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     }
-    
 }

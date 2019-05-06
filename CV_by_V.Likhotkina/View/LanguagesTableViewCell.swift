@@ -10,6 +10,5 @@ import UIKit
 
 class LanguagesTableViewCell: UITableViewCell {
     @IBOutlet weak var languageNameLabel: UILabel!
-    
     @IBOutlet weak var languageLevelLabel: UILabel!
 }
