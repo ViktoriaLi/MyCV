@@ -34,8 +34,8 @@ class InfoAboutMe {
         "Worked with Agile methodology, team work experience."]
     
     var works =
-        [Works(companyName: "UNIT Factory", position: "Student (Swift, C)", jobDescription: "At Unit Factory I started programming and have learned fundamentals like data structures, memory, file management etc. Except projects on C language I passed several intensives, such C++, which gave me OOP basic experience. Also I passed IOS/Swift intensive course and I continue to study this area from that time.", duration: "September 2017 - present"),
+        [Works(companyName: "UNIT Factory", position: "Student (Swift, C)", jobDescription: "At Unit Factory I started programming and have learned fundamentals like data structures, memory, file management etc. Except projects on C language I passed several intensives, such as C++, which gave me OOP basic experience. Also I passed IOS/Swift intensive course and I continue to study this area from that time.", duration: "September 2017 - present"),
          Works(companyName: "ExpoPlatform", position: "QA Engineer", jobDescription: "Grocery IT company which developed event management system consisting of CMS, websites and mobile applications. I worked with team of developers and testers,  created test cases for all products and performed all stages of testing manually.", duration: "Jan 2017 - Sep 2017"),
-         Works(companyName: "Security Services Group", position: "QA Engineer", jobDescription: "Startup company which project is  secure messenger (mobile apps and web version). Being a single tester I have organized testing process  and performed all cycle of manual testing.", duration: "Dec 2015 - Jan 2017")
+         Works(companyName: "Security Services Group", position: "QA Engineer", jobDescription: "Startup company which project is secure messenger (mobile apps and web version). Being a single tester I have organized testing process  and performed all cycle of manual testing.", duration: "Dec 2015 - Jan 2017")
     ]
 }
