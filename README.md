@@ -9,6 +9,7 @@ I displayed standarts CV sections using these tools:
 3. WKWebView
 4. UILabel
 5. UIButton
+6. UIImageView
 6. UITabBarController
 7. UINavigationController
 
@@ -19,5 +20,5 @@ For making UI adaptive I used:
 
 Some features for usability:
 1. TabBar views can be swiped
-2. Table views sections are collapsible
+2. Table view sections are collapsible
 3. Skills can be searched with UISearchBar
