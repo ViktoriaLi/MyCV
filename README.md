@@ -1,5 +1,3 @@
-# MacPaw Summer Internship 2019 test app
-
 For this application I tried to use MVC pattern. 
 
 I displayed standarts CV sections using these tools:
