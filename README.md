@@ -1,5 +1,4 @@
-# MyCV
-MacPaw Summer Internship 2019 test app
+# MacPaw Summer Internship 2019 test app
 
 For this application I tried to use MVC pattern. 
 
